@@ -1,5 +1,5 @@
 function launchInfoViewController() {
-    ObjC.schedule(ObjC.mainQueue, function () {
+    ObjC.schedule(ObjC.mainQueue, function() {
         var application = ObjC.classes.UIApplication.sharedApplication();
         var viewController = application.keyWindow().rootViewController();
         viewController.presentedViewController().performSegueWithIdentifier_sender_("HomeToDebugSegue", NULL);
